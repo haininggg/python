@@ -1,0 +1,160 @@
+print("Title of program: MCQ revision program")
+print()
+
+counter = 0
+score = 0
+total_num_of_qn = 4
+
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "What is 26 x 134 ?")
+  print("   a) 160")
+  print("   b) 3484")
+  print("   c) -108")
+  print("   d) 0.19")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Wrong. This is not addition."
+    score -=1
+  elif answer == "b":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  elif answer == "c":
+    output = "Wrong. This is not subtraction."
+    score -=1
+  elif answer == "d":
+    output = "Wrong. This is not division."
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+  
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "factorise 3ab + 9ac + 15ab")
+  print("   a) 3a (b + 3c + 5b)")
+  print("   b) 3ab (3c + 5)")
+  print("   c) 9a (3b + c + 15b)")
+  print("   d) a (3b + 9c + 15b)")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  elif answer == "b":
+    output = "Wrong. Does 9ac have b?"
+    score -=1
+  elif answer == "c":
+    output = "Wrong. Is 9 a factor of 3?"
+    score -=1
+    
+  elif answer == "d":
+    output = "Wrong. What's common between 3, 9 and 15?"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
+
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "What does a plant cell have that an animal cell doesn't?")
+  print("   a) cytoplasm")
+  print("   b) nucleus")
+  print("   c) cell membrane")
+  print("   d) cell wall")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Wrong. An animal cell has cytoplasm."
+    score -=1
+  elif answer == "b":
+    output = "Wrong. An animal cell has a nucleus."
+    score -=1
+  elif answer == "c":
+    output = "Wrong. An animal cell has a cell membrane."
+    score -=1
+    
+  elif answer == "d":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+  
+  print()
+  print(output.lower())
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
+  
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "science question :/")
+  print("   a) 3a (b + 3c + 5b)")
+  print("   b) 3ab (3c + 5)")
+  print("   c) 9a (3b + c + 15b)")
+  print("   d) a (3b + 9c + 15b)")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  elif answer == "b":
+    output = "Wrong. Does 9ac have b?"
+    score -=1
+  elif answer == "c":
+    output = "Wrong. Is 9 a factor of 3?"
+    score -=1
+    
+  elif answer == "d":
+    output = "Wrong. What's common between 3, 9 and 15?"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+print("Congrats! End of quiz!")
+  
