@@ -118,43 +118,5 @@ while tracker !=1:
   print()
   print()
   
-  
-  
-counter +=1
-tracker = 0
-
-while tracker !=1:
-  
-  print("Q"+str(counter)+") "+ "science question :/")
-  print("   a) 3a (b + 3c + 5b)")
-  print("   b) 3ab (3c + 5)")
-  print("   c) 9a (3b + c + 15b)")
-  print("   d) a (3b + 9c + 15b)")
-  answer = input("Your answer: ")
-  answer = answer.lower()
-  if answer == "a":
-    output = "Yes, that's right!"
-    tracker =1
-    score +=1
-  elif answer == "b":
-    output = "Wrong. Does 9ac have b?"
-    score -=1
-  elif answer == "c":
-    output = "Wrong. Is 9 a factor of 3?"
-    score -=1
-    
-  elif answer == "d":
-    output = "Wrong. What's common between 3, 9 and 15?"
-    score -=1
-  else:
-    output = "Please choose a, b, c or d only."
-
-  print()
-  print(output)
-  print()
-  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
-  print()
-  print()
-  
 print("Congrats! End of quiz!")
   
