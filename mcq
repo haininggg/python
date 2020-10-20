@@ -3,7 +3,7 @@ print()
 
 counter = 0
 score = 0
-total_num_of_qn = 4
+total_num_of_qn = 3
 
 
 counter +=1
