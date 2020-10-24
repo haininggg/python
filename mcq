@@ -118,5 +118,45 @@ while tracker !=1:
   print()
   print()
   
+  
+  
+  counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+ print("Q"+str(counter)+") "+ "What is an example of osmosis?")
+  print("   a) The spreading of the smell of perfume from the other side of the room.")
+  print("   b) The absorbtion of water into the small intestines.")
+  print("   c) The absorption of water from the soil by root hair cells.")
+  print("   d) The spreading of a drop of ink after placed in water.")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Wrong. Osmosis reqiuires a membrane and can only take place with water molecules."
+    score -=1
+  elif answer == "b":
+    output = "Wrong. Osmosis reqiuires a membrane and can only take place with water molecules."
+    score -=1
+  elif answer == "c":
+    output = "Yes, that's right!"
+    tracker =1
+    score +=1
+  elif answer == "d":
+    output = "Wrong. Osmosis reqiuires a membrane and can only take place with water molecules. :D"
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+  
+
+  
+  print()
+  print(output.lower())
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
 print("Congrats! End of quiz!")
   
